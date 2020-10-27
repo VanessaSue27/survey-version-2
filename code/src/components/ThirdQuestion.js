@@ -5,7 +5,7 @@ export const ThirdQuestion = ({day, setDay, setQuestion}) => {
     if(day) {
       setQuestion('fourthQuestion');
     } else {
-      alert('Please pick!');
+      alert('Please pick a Time');
     }
   };
 
@@ -21,7 +21,7 @@ export const ThirdQuestion = ({day, setDay, setQuestion}) => {
             <option value="Afternoon">Afternoon</option>
             <option value="Sunset">Sunset</option>
         </select>
-        <button onClick={handleClick}>Show me the result!</button>
+        <button onClick={handleClick}>Next</button>
     </div>
   );
 };

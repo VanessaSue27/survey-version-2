@@ -6,7 +6,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.welcome-box {
+.welcome-box, .question-one-container {
   width: 800px;
   height: 500px;
   margin: 0;
@@ -48,4 +48,85 @@ body {
 
 .start-button:hover {
   background-color: #907D65;
+}
+
+.question-one-container {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+}
+
+.question-one-form {
+  margin-top: 80px;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  margin: auto;
+  background: rgba(255, 234, 206, 0.7);
+  color: black;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.question-one-label {
+  margin-left: 25px;
+}
+
+/* Radio buttons styling */
+.radio-button-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 10px;
+  user-select: none;
+}
+
+.radio-button-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+} 
+
+.custom-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: white;
+  border: 2px solid #907D65;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+.radio-button-container:focus input ~ .custom-radio,
+.radio-button-container:hover input ~ .custom-radio {
+  background-color: #C6B298;
+}
+
+.radio-button-container input:checked ~ .custom-radio {
+  background-color: #907D65;
+}
+
+.custom-radio:after {
+  content:"";
+  position: absolute;
+  top: 6px;
+  left: 6px; 
+  width: 9px;
+  height: 9px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: none;
+}
+
+.radio-button-container input:checked ~ .custom-radio:after {
+  display: block;
 }

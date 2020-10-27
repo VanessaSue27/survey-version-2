@@ -3,10 +3,10 @@ import React from "react";
 export const FourthQuestion = ({snacks, setSnacks, setQuestion}) => {
   const availableSnacks = ['Kombucha', 'Potato Chips', 'Sodas', 'Beer', 'Grapes', 'Cookies'];
   const handleClick = () => {
-    if(snacks) {
+    if(snacks.length > 0) {
       setQuestion('summary');
     } else {
-      alert('Please pick!');
+      alert('Please grab some Snacks!');
     }
   };
 
@@ -17,9 +17,9 @@ export const FourthQuestion = ({snacks, setSnacks, setQuestion}) => {
   };
 
   return (
-    <div>
-      <fieldset className="container">
-        <legend>Which snacks are you taking with you?</legend>
+    <>
+      <form onSubmit={(event) => event.preventDefault()}>
+        <p>Which snacks are you taking with you?</p>
         <div>
             {availableSnacks.map((item) => (
             <label key={item} htmlFor="snack-options"> 
@@ -35,8 +35,8 @@ export const FourthQuestion = ({snacks, setSnacks, setQuestion}) => {
             </label>
             ))}
         </div>
-      </fieldset> 
-      <button onClick={handleClick}>Show me the result!</button>
-    </div>
+        <button onClick={handleClick}>Show me the result!</button>
+      </form> 
+    </>
   );
 };

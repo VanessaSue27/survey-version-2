@@ -5,7 +5,7 @@ export const SecondQuestion = ({number, setNumber, setQuestion}) => {
     if(number) {
       setQuestion('thirdQuestion');
     } else {
-      alert('Please pick!');
+      alert('Please pick a Number');
     }
   };
 
