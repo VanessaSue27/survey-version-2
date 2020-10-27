@@ -1,6 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
-export const NumberPicker = ({number, setNumber, setQuestion}) => {
+export const SecondQuestion = ({number, setNumber, setQuestion}) => {
+  const handleClick = () => {
+    if(number) {
+      setQuestion('thirdQuestion');
+    } else {
+      alert('Please pick!');
+    }
+  };
+
   return (
     <>
       <div className="number-picker">
@@ -15,7 +23,7 @@ export const NumberPicker = ({number, setNumber, setQuestion}) => {
             onChange={(event) => setNumber(event.target.value)}
             required />
         </label>
-        <button onClick={() => setQuestion('dayPicker')}>Next</button>
+        <button onClick={handleClick}>Next</button>
       </div>
     </>
   );

@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 
 import { LandingPage } from "components/LandingPage";
-import { ColorPicker } from "components/ColorPicker";
-import { NumberPicker } from "components/NumberPicker";
-import { DayPicker } from "components/DayPicker";
+import { FirstQuestion } from "components/FirstQuestion"; //Pick favorite destination
+import { SecondQuestion } from "components/SecondQuestion"; //Pick a number
+import { ThirdQuestion } from "components/ThirdQuestion"; //Pick time of the Day
+import { FourthQuestion } from "components/FourthQuestion"; //Pick favo snacks and drinks
 import { FinalText } from "components/FinalText";
 
 export const App = () => {
   const [question, setQuestion] = useState('landingPage');
-  const [color, setColor] = useState();
+  const [destination, setDestination] = useState();
   const [number, setNumber] = useState();
   const [day, setDay] = useState();
+  const [snacks, setSnacks] = useState([]);
 
   return (
     <>
@@ -19,18 +21,21 @@ export const App = () => {
             {question === 'landingPage' && (
                 <LandingPage setQuestion={setQuestion}/>
             )}
-            {question === 'colorPicker' && (
-                <ColorPicker color={color} setColor={setColor} setQuestion={setQuestion}/>   
+            {question === 'firstQuestion' && (
+                <FirstQuestion destination={destination} setDestination={setDestination} setQuestion={setQuestion}/>   
             )}
-            {question === 'numberPicker' && (
-                <NumberPicker number={number} setNumber={setNumber} setQuestion={setQuestion}/>   
+            {question === 'secondQuestion' && (
+                <SecondQuestion number={number} setNumber={setNumber} setQuestion={setQuestion}/>   
             )}
-            {question === 'dayPicker' && (
-                <DayPicker day={day} setDay={setDay} setQuestion={setQuestion}/>   
+            {question === 'thirdQuestion' && (
+                <ThirdQuestion day={day} setDay={setDay} setQuestion={setQuestion}/>   
+            )}
+            {question === 'fourthQuestion' && (
+                <FourthQuestion snacks={snacks} setSnacks={setSnacks} setQuestion={setQuestion}/>   
             )}
         </section>            
         ) : (           
-          <FinalText color={color} number={number} day={day} />
+          <FinalText destination={destination} number={number} day={day} snacks={snacks} />
       )}     
     </>
   );

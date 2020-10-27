@@ -6,7 +6,7 @@ export const LandingPage = ({setQuestion}) => {
       <main>
         <h1>Welcome to the Survey!</h1>
         <h2>My attempt to practice more React State</h2>
-        <button onClick={() => setQuestion('colorPicker')}>Start the Survey</button>
+        <button onClick={() => setQuestion('firstQuestion')}>Start the Survey</button>
       </main>
     </>
   );
