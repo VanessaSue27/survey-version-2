@@ -3,10 +3,14 @@ import React from "react";
 export const LandingPage = ({setQuestion}) => {  
   return (
     <>
-      <main>
-        <h1>Welcome to the Survey!</h1>
-        <h2>My attempt to practice more React State</h2>
-        <button onClick={() => setQuestion('firstQuestion')}>Start the Survey</button>
+      <main className="welcome-box">
+        <h1>VACATION PLANS GENERATOR</h1>
+        <h2>Your corona-friendly Digital Getaway</h2>
+        <button 
+          className="start-button"
+          onClick={() => setQuestion('firstQuestion')}>
+            Dream Away!
+        </button>
       </main>
     </>
   );
