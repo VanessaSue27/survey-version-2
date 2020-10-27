@@ -153,3 +153,26 @@ body {
 .question-two-container input {
   font-size: 40px;
 }
+
+.question-three-container {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-three-container select {
+  width: 400px;
+  margin: 30px auto;
+  font-size: 30px;
+}
+
+.question-three-container label {
+  margin-top: 120px;
+}
+
+.third-button {
+  width: 100px;
+  margin: 10px auto;
+}

@@ -10,7 +10,7 @@ export const ThirdQuestion = ({day, setDay, setQuestion}) => {
   };
 
   return (
-    <div>
+    <div className="welcome-box question-three-container">
       <label htmlFor="dayTime">Pick a time of the Day:</label>
         <select
           id="dayTime"
@@ -21,7 +21,7 @@ export const ThirdQuestion = ({day, setDay, setQuestion}) => {
             <option value="Afternoon">Afternoon</option>
             <option value="Sunset">Sunset</option>
         </select>
-        <button onClick={handleClick}>Next</button>
+        <button className="start-button third-button" onClick={handleClick}>Next</button>
     </div>
   );
 };
