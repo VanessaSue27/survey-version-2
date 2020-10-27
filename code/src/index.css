@@ -50,7 +50,7 @@ body {
   background-color: #907D65;
 }
 
-.question-one-container {
+.question-one-container, .question-two-container {
   font-size: 45px;
   color: white;
   font-weight: bold;
@@ -76,7 +76,7 @@ body {
   margin-left: 25px;
 }
 
-/* Radio buttons styling */
+/* Custom Radio buttons styling */
 .radio-button-container {
   display: block;
   position: relative;
@@ -129,4 +129,27 @@ body {
 
 .radio-button-container input:checked ~ .custom-radio:after {
   display: block;
+}
+
+.question-two-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second-button {
+  width: 100px;
+  margin: 30px auto;
+}
+
+.question-two-container label {
+  margin-top: 40px;
+}
+
+.question-two-container p {
+  margin-top: 10px;
+}
+
+.question-two-container input {
+  font-size: 40px;
 }
