@@ -6,28 +6,25 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+/*Landing Page Styling*/
 .welcome-box, .question-one-container {
-  width: 800px;
+  width: 90%;
   height: 500px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin: 70px auto;
   border: 5px solid white;
   background: rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 
 .welcome-box h1 {
-  font-size: 70px;
+  font-size: 30px;
   color: white;
+  margin-top: 60px;
 }
 
 .welcome-box h2 {
   background: rgba(255, 234, 206, 0.7);
-  width: 400px;
+  width: 50%;
   margin: auto;
   padding: 20px;
   font-size: 17px;
@@ -50,6 +47,7 @@ body {
   background-color: #907D65;
 }
 
+/*Question one styling*/
 .question-one-container, .question-two-container {
   font-size: 45px;
   color: white;
@@ -64,7 +62,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 400px;
+  width: 90%;
   margin: auto;
   background: rgba(255, 234, 206, 0.7);
   color: black;
@@ -131,6 +129,7 @@ body {
   display: block;
 }
 
+/*Question Two styling*/
 .question-two-container {
   display: flex;
   flex-direction: column;
@@ -143,7 +142,7 @@ body {
 }
 
 .question-two-container label {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .question-two-container p {
@@ -154,6 +153,7 @@ body {
   font-size: 40px;
 }
 
+/*Question Three Styling*/
 .question-three-container {
   font-size: 45px;
   color: white;
@@ -163,7 +163,7 @@ body {
 }
 
 .question-three-container select {
-  width: 400px;
+  width: 70%;
   margin: 30px auto;
   font-size: 30px;
 }
@@ -177,8 +177,10 @@ body {
   margin: 10px auto;
 }
 
+/*Question Four styling*/
 .question-four-container {
-  font-size: 32px;
+  font-size: 30px;
+  height: 600px;
   color: white;
   font-weight: bold;
   display: flex;
@@ -186,7 +188,7 @@ body {
 }
 
 .snacks-text {
-  width: 600px;
+  width: 95%;
   margin: 30px auto;
 }
 
@@ -194,9 +196,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 170px;
+  margin-left: 20px;
   background: rgba(255, 234, 206, 0.7);
-  width: 400px;
+  width: 85%;
 }
 
 .checkboxes-container label {
@@ -208,7 +210,7 @@ body {
 
 .fourth-button {
   margin: 20px auto;
-  width: 300px;
+  width: 200px;
 }
 
 /* Custom Checkboxes styling */
@@ -265,10 +267,11 @@ body {
   display: block;
 }
 
+/*Final Text styling*/
 .final-text p {
-  font-size: 30px;
+  font-size: 15px;
   font-weight: bold;
-  width: 600px;
+  width: 60%;
   margin: 60px auto;
   padding: 30px;
   background: rgba(255, 234, 206, 0.7);
@@ -279,9 +282,25 @@ body {
 }
 
 /*Media Queries*/
-/*TABLET*/
+/*TABLET
 @media (min-width: 667px) and (max-width: 1024px) {
   .welcome-box {
     width: 700px;
   }
-}
+}*/
+
+/*MOBILE
+@media (max-width: 666px) {
+  body {
+    border: 2px solid blue;
+    width: 100%;
+  }
+
+  .welcome-box {
+    width: 80%;
+  }
+
+  .welcome-box h1 {
+    font-size: 30px;
+  }
+}*/
