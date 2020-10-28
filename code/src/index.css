@@ -282,25 +282,19 @@ body {
 }
 
 /*Media Queries*/
-/*TABLET
+/*TABLET*/
 @media (min-width: 667px) and (max-width: 1024px) {
   .welcome-box {
-    width: 700px;
-  }
-}*/
-
-/*MOBILE
-@media (max-width: 666px) {
-  body {
-    border: 2px solid blue;
-    width: 100%;
-  }
-
-  .welcome-box {
-    width: 80%;
+    width: 70%;
   }
 
   .welcome-box h1 {
-    font-size: 30px;
+    font-size: 40px;
+    color: white;
+    margin-top: 60px;
   }
-}*/
+
+  .final-text p {
+    font-size: 20px;
+  }
+}
