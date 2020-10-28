@@ -277,3 +277,11 @@ body {
 .final-button {
   margin-top: 10px;
 }
+
+/*Media Queries*/
+/*TABLET*/
+@media (min-width: 667px) and (max-width: 1024px) {
+  .welcome-box {
+    width: 700px;
+  }
+}

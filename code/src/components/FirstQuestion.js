@@ -10,7 +10,7 @@ export const FirstQuestion = ({destination, setDestination, setQuestion}) => {
   };
 
   return (
-    <form className="question-one-container" onSubmit={(event) => event.preventDefault()}>
+    <form className="question-one-container welcome-box" onSubmit={(event) => event.preventDefault()}>
       <div className="question-one-form">
         Pick a Destination:
         <div className="radio-buttons">
