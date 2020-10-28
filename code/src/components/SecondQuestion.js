@@ -1,11 +1,11 @@
 import React from "react";
 
-export const SecondQuestion = ({number, setNumber, setQuestion}) => {
+export const SecondQuestion = ({ number, setNumber, setQuestion }) => {
   const handleClick = () => {
-    if(number) {
-      setQuestion('thirdQuestion');
+    if (number) {
+      setQuestion("thirdQuestion");
     } else {
-      alert('Please pick a Number');
+      alert("Please pick a Number");
     }
   };
 
@@ -23,7 +23,9 @@ export const SecondQuestion = ({number, setNumber, setQuestion}) => {
           onChange={(event) => setNumber(event.target.value)}
           required />
       </label>
-      <button className="start-button second-button" onClick={handleClick}>Next</button>
+      <button className="start-button second-button" onClick={handleClick}>
+        Next
+      </button>
     </div>
   );
 };

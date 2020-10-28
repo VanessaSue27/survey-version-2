@@ -18,21 +18,21 @@ export const App = () => {
     <>
       {question !== 'summary' ? (
         <section id="questions-container">
-            {question === 'landingPage' && (
-                <LandingPage setQuestion={setQuestion}/>
-            )}
-            {question === 'firstQuestion' && (
-                <FirstQuestion destination={destination} setDestination={setDestination} setQuestion={setQuestion}/>   
-            )}
-            {question === 'secondQuestion' && (
-                <SecondQuestion number={number} setNumber={setNumber} setQuestion={setQuestion}/>   
-            )}
-            {question === 'thirdQuestion' && (
-                <ThirdQuestion day={day} setDay={setDay} setQuestion={setQuestion}/>   
-            )}
-            {question === 'fourthQuestion' && (
-                <FourthQuestion snacks={snacks} setSnacks={setSnacks} setQuestion={setQuestion}/>   
-            )}
+          {question === 'landingPage' && (
+              <LandingPage setQuestion={setQuestion}/>
+          )}
+          {question === 'firstQuestion' && (
+              <FirstQuestion destination={destination} setDestination={setDestination} setQuestion={setQuestion}/>   
+          )}
+          {question === 'secondQuestion' && (
+              <SecondQuestion number={number} setNumber={setNumber} setQuestion={setQuestion}/>   
+          )}
+          {question === 'thirdQuestion' && (
+              <ThirdQuestion day={day} setDay={setDay} setQuestion={setQuestion}/>   
+          )}
+          {question === 'fourthQuestion' && (
+              <FourthQuestion snacks={snacks} setSnacks={setSnacks} setQuestion={setQuestion}/>   
+          )}
         </section>            
         ) : (           
           <FinalText destination={destination} number={number} day={day} snacks={snacks} />
