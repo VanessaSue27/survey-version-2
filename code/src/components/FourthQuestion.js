@@ -17,26 +17,24 @@ export const FourthQuestion = ({snacks, setSnacks, setQuestion}) => {
   };
 
   return (
-    <>
-      <form onSubmit={(event) => event.preventDefault()}>
-        <p>Which snacks are you taking with you?</p>
-        <div>
-            {availableSnacks.map((item) => (
-            <label key={item} htmlFor="snack-options"> 
-                <input
-                    id="snack-options"
-                    name="snack"
-                    type="checkbox" 
-                    checked={snacks.includes(item)} 
-                    onChange={() => onTypeChange(item)}
-                />              
-                {item}
-                <span className="custom-checkbox"></span>                         
-            </label>
-            ))}
-        </div>
-        <button onClick={handleClick}>Show me the result!</button>
-      </form> 
-    </>
+    <form className="welcome-box question-four-container" onSubmit={(event) => event.preventDefault()}>
+      <p className="snacks-text">Which snacks are you taking with you?</p>
+      <div className="checkboxes-container">
+          {availableSnacks.map((item) => (
+          <label className="checkbox-container" key={item}> 
+              <input
+                  id="snack-options"
+                  name="snack"
+                  type="checkbox" 
+                  checked={snacks.includes(item)} 
+                  onChange={() => onTypeChange(item)}
+              />              
+              {item}
+              <span className="custom-checkbox"></span>                         
+          </label>
+          ))}
+      </div>
+      <button className="start-button fourth-button" onClick={handleClick}>Pack your bags!</button>
+    </form>
   );
 };
