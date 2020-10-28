@@ -298,3 +298,29 @@ body {
     font-size: 20px;
   }
 }
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .welcome-box {
+    width: 60%;
+    max-width: 800px;
+    margin-top: 200px;
+  }
+
+  .welcome-box h1 {
+    font-size: 60px;
+  }
+
+  .radio-buttons {
+    width: 70%;
+  }
+
+  .checkboxes-container {
+    margin-left: 100px;
+    width: 70%;
+  }
+
+  .final-text p {
+    font-size: 27px;
+  }
+}
