@@ -264,3 +264,16 @@ body {
 .checkbox-container input:checked ~ .custom-checkbox:after {
   display: block;
 }
+
+.final-text p {
+  font-size: 30px;
+  font-weight: bold;
+  width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255, 234, 206, 0.7);
+}
+
+.final-button {
+  margin-top: 10px;
+}
